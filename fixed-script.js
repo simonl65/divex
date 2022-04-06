@@ -1,5 +1,5 @@
 listner = document.addEventListener('click', (e) => {
-  const clickedExpander = e.srcElement.closest('.expander, .expanded');
+  const clickedExpander = e.target.closest('.expander, .expanded');
   if (!clickedExpander) return; // An expander wasn't clicked
 
   const container = document.querySelector('#container');
